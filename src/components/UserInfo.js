@@ -4,5 +4,5 @@ import { currentUserNameQuery } from "../state/selectors";
 
 export function UserInfo() {
   const userName = useRecoilValue(currentUserNameQuery);
-  return <div>{userName}</div>;
+  return <div>Fetch from network: {userName}</div>;
 }
